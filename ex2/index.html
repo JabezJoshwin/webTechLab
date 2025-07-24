@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div {
+            margin: 1rem;
+        }
+
+        label {
+            margin: .25rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- heading -->
+    <h1>LEAVE APPLICATION FORM</h1>
+
+    <!-- feildset used here -->
+    <fieldset>
+        <legend>Leave form</legend>
+        <div class="form">
+            <form action="#">
+                <div class="name">
+                    <label for="name">Enter your name:</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div class="phone">
+                    <label for="phone">Enter your Phone number: </label>
+                    <input type="tel" name="phone" id="phone">
+                </div>
+                <div class="email">
+                    <label for="mail">Enter your Email: </label>
+                    <input type="email" id="mail">
+                </div>
+                <div class="emp-id">
+                    <label for="id">Enter Employee ID(password): </label>
+                    <input type="password"  id="id">
+                </div>
+                <div class="start-date">
+                    <label for="start">Enter start date: </label>
+                    <input type="date" name="start" id="start">
+                </div>
+                <div class="end-date">
+                    <label for="end">Enter end date: </label>
+                    <input type="date" name="date" id="end">
+                </div>
+                <div class="leave-type">
+                    <label >Leave Type: </label>
+
+                    <input type="radio" id="vacation" name="leave">
+                    <label for="vacation">Vacation Holidays</label>
+
+                    <input type="radio" id="sick" name="leave">
+                    <label for="sick">Sick Leave</label>
+
+                    <input type="radio" id="w/o-pay" name="leave">
+                    <label for="w/o-pay">Leave w/o pay</label>
+                </div>
+
+                <div class="url">
+                    <label for="inp-url">Enter supporting links: </label>
+                    <input type="url" id="inp-url">
+                </div>
+
+                <div class="serch">
+                    <label for="search">Search: </label>
+                    <input type="search" id="search">
+                </div>
+
+                <div class="terms">
+                    <input type="checkbox" id="agree">
+                    <label for="agree">Agree to our terms & conditions</label>
+                </div>
+
+                <div class="desc">
+                    <label for="descr">Enter your description: </label><br>
+                    <textarea id="descr" cols="30" rows="10"></textarea>
+                </div>
+
+                <div class="time-zone">
+                    <label for="time">Enter Time Zone: </label>
+                    <select id="time">
+                        <option value="">IST</option>
+                        <option value="">PDT</option>
+                        <option value="">EST</option>
+                    </select>
+                </div>
+
+                <div class="file-upload">
+                    <label for="file">Upload files here: </label>
+                    <input type="file"  id="file">
+                </div>
+
+                <div class="prg">
+                    <label for="prog">Your progress: </label>
+                    <progress id="prog" value="45" max="100"></progress>
+                </div>
+
+                <div class="btns">
+                    <button type="submit">Sumbit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </form>
+        </div>
+    </fieldset>
+</body>
+
+</html>
