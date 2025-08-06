@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    font-size: 1.1rem;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    background-color: turquoise;
+    height: 7.5vh;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000; /* ensures it stays above other elements */
+}
+
+
+nav input{
+    margin: 1%;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 1%;
+}
+
+.search button {
+    border-radius: 20%;
+    font-size: medium;
+}
+
+main {
+    height: 60vh;
+    background-color: yellow;
+    background-image: url('https://855f3458a0cb8fd9281e-dd40c17769da20f7bde3c93c13ae8e34.ssl.cf1.rackcdn.com/_P9C9742.jpg');
+    object-fit: cover;
+    justify-content: center;
+    background-size: cover;
+    background-position: center; /* Center the image */ 
+    background-repeat: no-repeat;
+}
+
+section {
+    padding: 1rem;
+    height: 100%;
+    background-color: beige;
+}
+
+.texts {
+    justify-content: center;
+    text-align: center;
+    font-size: 2rem;
+}
+
+.texts p {
+    padding: 2rem;
+    padding-top: 1rem;
+    text-align: left;
+    margin: 0 auto;
+}
+
+hr {
+    color: white;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 2rem;
+}
+
+h2 {
+    text-align: center;
+    margin:  0 auto;
+    font-size: 2rem;
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 27px;
+    max-width: 90vw;
+    margin: 0 auto;
+}  
+
+.parent > div {
+    box-sizing:border-box;
+    text-align: center;
+    background-color: white;
+    height: 40vh;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 2%;
+    box-shadow: 4px 4px 10px 2px rgba(0,0,0,0.3);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    padding-bottom: 2rem;
+}
+
+.parent > div:hover {
+    box-shadow: 8px 8px 10px 6px rgba(0,0,0,0.3);
+}
+
+.parent img {
+    width: 100%;
+    height: 80%;
+    border-radius: 2% 2% 0 0;
+}
+
+.conclusion {
+    background-color: bisque;
+    height: 30vh;
+    width: 90%;
+    opacity: .8;
+    margin: 0 auto;
+    display: flex;
+    padding: 2rem;
+}
+
+.conclusion p {
+    margin: auto;
+    padding: 2rem;
+}
+
+footer {
+    height: 10vh;
+    background-color: black;
+    color: bisque;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
