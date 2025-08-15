@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cake Shop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        Cake Shop
+    </nav>
+
+    <div class="photos">
+        <div class="photo">
+            <img src="https://images.pexels.com/photos/8245038/pexels-photo-8245038.jpeg" alt="">
+            <p>Rainbow Cake - Rs. 300</p>
+        </div>
+
+        <div class="photo">
+            <img src="https://images.pexels.com/photos/1854652/pexels-photo-1854652.jpeg" alt="">
+            <p>Chocolate Cake - Rs. 200</p>
+        </div>
+
+        <div class="photo">
+            <img src="https://images.pexels.com/photos/30131920/pexels-photo-30131920.jpeg" alt="">
+            <p>Red Velvet Cake - Rs. 250</p>
+        </div>
+
+        <div class="photo">
+            <img src="https://images.pexels.com/photos/2147868/pexels-photo-2147868.jpeg" alt="">
+            <p>Black Forest Cake - Rs. 350</p>
+        </div>
+    </div>
+
+    <h2>Order Cake</h2>
+
+    <div class="container">
+        <div class="main">
+            <div class="cake">
+                <label for="cake1">Rainbow Cake (Quantity)</label><br>
+                <input type="number" name="cake1" id="cake1">
+            </div>
+
+            <div class="cake">
+                <label for="cake2">Chocolate Cake (Quantity)</label><br>
+                <input type="number" name="cake2" id="cake2">
+            </div>
+
+            <div class="cake">
+                <label for="cake3">Red Velvet Cake (Quantity)</label><br>
+                <input type="number" name="cake3" id="cake3">
+            </div>
+
+            <div class="cake">
+                <label for="cake4">Black Forest Cake (Quantity)</label><br>
+                <input type="number" name="cake4" id="cake4">
+            </div>
+
+            <br><br>
+            <button>Place order</button>
+            <br><br>
+
+            <hr>
+
+            <h3>Purchase order bill</h3>
+            <h3 class="finalAmt">Total Price: 0.00</h3>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
