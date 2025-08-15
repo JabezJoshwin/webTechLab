@@ -51,8 +51,9 @@ h2 {
     padding: 2rem;
     height: 70vh;
     width: 50vw;
-    background-color: blanchedalmond;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
     font-size: .5rem;
+    border-radius: 2.5%;
 }
 
 label {
