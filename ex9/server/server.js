@@ -6,12 +6,19 @@ import quizRoutes from "./routes/quizRoutes.js";
 import dotenv from "dotenv";
 import authRoutes from "./routes/authRoutes.js";
 
+dotenv.config();
 
 const app = express();
 app.use(express.json());
-app.use(cors());
 
-dotenv.config();
+// Configure CORS to allow the frontend origin (set CLIENT_URL in Render env)
+const CLIENT_URL = process.env.CLIENT_URL || "*";
+app.use(
+  cors({
+    origin: CLIENT_URL === "*" ? true : CLIENT_URL,
+    credentials: true,
+  })
+);
 
 const MONGO_URI = process.env.MONGO_URI || "mongodb://localhost:27017/microlearn2";
 
