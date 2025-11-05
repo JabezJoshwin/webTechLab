@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import Quiz from "./components/Quiz";
 
+let API_BASE = import.meta.env.API_BASE;
+
 function App() {
   const [lessons, setLessons] = useState([]);
   const [selectedLesson, setSelectedLesson] = useState(null);
@@ -9,7 +11,7 @@ function App() {
   const [newLesson, setNewLesson] = useState({ title: "", content: "" });
 
   const fetchLessons = async () => {
-    const res = await axios.get("http://localhost:5001/api/lessons");
+    const res = await axios.get(API_BASE);
     setLessons(res.data);
   };
 
